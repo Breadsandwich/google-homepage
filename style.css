@@ -10,3 +10,37 @@ html {
     grid-template-areas: "About Store . Gmail Images apps Sign-in" ;
 
 }
+a {
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+
+}
+ #store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+ }
+
+ #Gmail {
+    grid-area: Gmail;
+    justify-self: center;
+    align-self: center;
+ }
+
+ #images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+ }
+
+ #main {
+     display: grid;
+     grid-template-rows: 200px 70px 70px 200px;
+     grid-template-columns: 1fr 1fr 1fr ;
+ }
