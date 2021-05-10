@@ -1,46 +1,70 @@
-html {
-    height: 100%;
-    min-height: 100%;
+body {
+    margin: ;
 }
 
-#navbar {
-    display: grid;
-    grid-template-columns: 50px 50px 1fr  50px 50px 50px 50px;
-    grid-template-rows: 50px;
-    grid-template-areas: "About Store . Gmail Images apps Sign-in" ;
+#nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+#nav a{
+    margin-right: 20px;
+}
+
+#nav a.topimage {
+    width: 20px;
+    height:20px;
+    background: red;
+    border-radius: 50%;
 
 }
-a {
-    text-decoration: none;
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+#middle {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#about {
-    grid-area: about;
+
+#logo {
+    text-align: center;
+}
+
+#searchbarcontainer {
     justify-self: center;
     align-self: center;
+    margin-top: 20px;
 
 }
- #store {
-    grid-area: store;
-    justify-self: center;
-    align-self: center;
- }
 
- #Gmail {
-    grid-area: Gmail;
-    justify-self: center;
-    align-self: center;
- }
+#searchbar {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    outline: 0;
+    width: 500px;
+    border-radius: 15px;
+    border: 2px solid rgb(209, 208, 203)
 
- #images {
-    grid-area: images;
-    justify-self: center;
-    align-self: center;
- }
+}
 
- #main {
-     display: grid;
-     grid-template-rows: 200px 70px 70px 200px;
-     grid-template-columns: 1fr 1fr 1fr ;
- }
+#buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+
+}
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    background:rgb(209, 208, 203)
+}
+
+#footer-content {
+    background: rgb(209, 208, 203);
+    border-top: 1px;
+}
